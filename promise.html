@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		//promise
+		let a=20; b=7
+		let promise= new Promise(
+			function(resolve,reject){
+				setTimeout( ()=>{
+					if(a>b){
+						resolve("promise sucess")
+					}
+					else{
+						reject("promise reject")
+					}
+				},3000);
+			}
+		)
+		console.log(promise);
+		//call back function
+		function myfunction(cal1){
+			console.log("anitha	")
+			cal1()
+		}
+		function function1(){
+			console.log("welcome")
+		}
+		myfunction(function1)
+
+	</script>
+
+</body>
+</html>
